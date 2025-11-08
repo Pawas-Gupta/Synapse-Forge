@@ -1,0 +1,11 @@
+streamlit
+flask
+flask-cors
+langchain
+langchain-google-genai
+google-generativeai
+pandas
+numpy
+beautifulsoup4
+requests
+python-dotenv
