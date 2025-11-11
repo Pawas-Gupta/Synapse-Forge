@@ -1,4 +1,3 @@
-README = """
 # AI-Powered RFP Response Agent System
 
 Multi-agent AI system for automating B2B manufacturing RFP responses.
@@ -56,4 +55,3 @@ streamlit run frontend/streamlit_app.py
 - Backend runs on http://localhost:5000
 - Frontend runs on http://localhost:8501
 - Database initialized in-memory on startup
-"""
