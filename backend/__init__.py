@@ -1,4 +1,2 @@
-BACKEND_INIT = """
-\"\"\"Backend package initialization\"\"\"
+"""Backend package initialization"""
 __version__ = "1.0.0"
-"""

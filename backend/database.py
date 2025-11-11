@@ -1,5 +1,5 @@
-DATABASE_PY = """
-\"\"\"Database initialization and management\"\"\"
+# DATABASE_PY = """
+# \"\"\"Database initialization and management\"\"\"
 import sqlite3
 import json
 from typing import Optional
@@ -11,13 +11,13 @@ class Database:
         self.initialize()
     
     def initialize(self):
-        \"\"\"Initialize database with schema and mock data\"\"\"
+        # \"\"\"Initialize database with schema and mock data\"\"\"
         self.conn = sqlite3.connect(self.db_path, check_same_thread=False)
         self._create_tables()
         self._insert_mock_data()
     
     def _create_tables(self):
-        \"\"\"Create database tables\"\"\"
+        # \"\"\"Create database tables\"\"\"
         cursor = self.conn.cursor()
         
         # SKU Catalog Table
@@ -62,7 +62,7 @@ class Database:
         self.conn.commit()
     
     def _insert_mock_data(self):
-        \"\"\"Insert mock SKU data\"\"\"
+        # \"\"\"Insert mock SKU data\"\"\"
         cursor = self.conn.cursor()
         
         mock_skus = [
@@ -166,11 +166,11 @@ class Database:
         self.conn.commit()
     
     def get_connection(self):
-        \"\"\"Get database connection\"\"\"
+        # \"\"\"Get database connection\"\"\"
         return self.conn
     
     def close(self):
-        \"\"\"Close database connection\"\"\"
+        # \"\"\"Close database connection\"\"\"
         if self.conn:
             self.conn.close()
 
@@ -178,9 +178,9 @@ class Database:
 db_instance = None
 
 def get_db():
-    \"\"\"Get or create database instance\"\"\"
+    # \"\"\"Get or create database instance\"\"\"
     global db_instance
     if db_instance is None:
         db_instance = Database()
     return db_instance
-"""
+# """

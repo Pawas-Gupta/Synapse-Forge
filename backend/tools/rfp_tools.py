@@ -1,14 +1,13 @@
-RFP_TOOLS_PY = """
-\"\"\"RFP discovery and processing tools\"\"\"
+"""RFP discovery and processing tools"""
 from bs4 import BeautifulSoup
 import requests
 
 def find_rfp_online(query: str) -> str:
-    \"\"\"
+    """
     Mock BeautifulSoup wrapper - simulates RFP discovery
-    In production, this would scrape actual RFP websites
-    \"\"\"
-    mock_rfp = f\"\"\"
+    In production, this would scrape actual RFP websites"""
+    
+    mock_rfp = f"""
     ========================================
     RFP DOCUMENT
     ========================================
@@ -89,14 +88,14 @@ def find_rfp_online(query: str) -> str:
     - References from similar projects
     
     Contact: procurement@manufacturing-facility.com
-    \"\"\"
+    """
     
     return mock_rfp.strip()
 
 def parse_rfp_text(rfp_text: str) -> dict:
-    \"\"\"
+    """
     Parse RFP text and extract structured information
-    \"\"\"
+"""    
     # Simple keyword extraction
     keywords = {
         'circuit_breakers': rfp_text.lower().count('circuit breaker'),
@@ -113,4 +112,3 @@ def parse_rfp_text(rfp_text: str) -> dict:
         'text_length': len(rfp_text),
         'has_technical_specs': any(term in rfp_text.lower() for term in ['voltage', 'current', 'amp'])
     }
-"""

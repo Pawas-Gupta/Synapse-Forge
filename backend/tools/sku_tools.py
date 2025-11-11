@@ -1,13 +1,12 @@
-SKU_TOOLS_PY = """
-\"\"\"SKU matching and pricing tools\"\"\"
+#SKU matching and pricing tools
 import json
 from typing import List, Dict, Any
 
 def match_sku(rfp_specs: str, db_connection) -> Dict[str, Any]:
-    \"\"\"
+    """
     Match RFP requirements against SKU catalog
     Returns matched products with confidence scores
-    \"\"\"
+    """
     cursor = db_connection.cursor()
     
     # Extract keywords from RFP
@@ -68,10 +67,10 @@ def match_sku(rfp_specs: str, db_connection) -> Dict[str, Any]:
     }
 
 def estimate_cost(matched_skus: List[Dict], db_connection) -> Dict[str, Any]:
-    \"\"\"
-    Calculate cost estimation based on matched SKUs
-    Estimates quantities and applies margins
-    \"\"\"
+    
+    """Calculate cost estimation based on matched SKUs
+    Estimates quantities and applies margins"""
+    
     if not matched_skus:
         return {
             'total_cost': 0,
@@ -127,7 +126,7 @@ def estimate_cost(matched_skus: List[Dict], db_connection) -> Dict[str, Any]:
     }
 
 def get_catalog_summary(db_connection) -> Dict[str, Any]:
-    \"\"\"Get summary statistics of SKU catalog\"\"\"
+    """Get summary statistics of SKU catalog"""
     cursor = db_connection.cursor()
     
     cursor.execute('SELECT COUNT(*) FROM SKU_CATALOG')
@@ -148,7 +147,7 @@ def get_catalog_summary(db_connection) -> Dict[str, Any]:
             'maximum': round(max_cost, 2)
         }
     }
-"""
+
 
 print("=" * 80)
 print("FILE STRUCTURE GENERATED - Copy each section to corresponding file")
