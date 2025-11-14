@@ -2,8 +2,8 @@ streamlit
 flask
 flask-cors
 langchain
-langchain-google-genai
-google-generativeai
+langchain-openai
+openai
 pandas
 numpy
 beautifulsoup4

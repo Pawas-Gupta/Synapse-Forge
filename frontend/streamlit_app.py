@@ -12,8 +12,8 @@ load_dotenv()
 # Backend API configuration
 API_BASE_URL = os.getenv('API_BASE_URL', 'http://127.0.0.1:5000/api')
 
-# Initialize Gemini API key for local agent execution if needed
-os.environ['GEMINI_API_KEY'] = os.getenv('GEMINI_API_KEY', '')
+# Initialize Groq API key for local agent execution if needed
+os.environ['GROQ_API_KEY'] = os.getenv('GROQ_API_KEY', '')
 
 
 # ============================================================================
@@ -84,7 +84,7 @@ with st.sidebar:
     
     st.markdown("### Tech Stack")
     st.code("""
-🧠 LLM: Gemini Pro
+🧠 LLM: Groq (GPT-OSS-20B)
 🔗 Framework: LangChain
 ⚙️  Backend: Flask API
 🎨 Frontend: Streamlit
@@ -426,7 +426,7 @@ with tab4:
 # ============================================================================
 
 st.divider()
-st.caption("🤖 AI-Powered RFP Response Agent System | Built with Streamlit, Flask, LangChain & Gemini")
+st.caption("🤖 AI-Powered RFP Response Agent System | Built with Streamlit, Flask, LangChain & Groq")
 
 
 print("=" * 80)

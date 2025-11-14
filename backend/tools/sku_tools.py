@@ -147,18 +147,3 @@ def get_catalog_summary(db_connection) -> Dict[str, Any]:
             'maximum': round(max_cost, 2)
         }
     }
-
-
-print("=" * 80)
-print("FILE STRUCTURE GENERATED - Copy each section to corresponding file")
-print("=" * 80)
-print("\\n📁 Files to create:\\n")
-print("1. requirements.txt")
-print("2. .env.example")
-print("3. README.md")
-print("4. backend/__init__.py")
-print("5. backend/database.py")
-print("6. backend/tools/__init__.py")
-print("7. backend/tools/rfp_tools.py")
-print("8. backend/tools/sku_tools.py")
-print("\\nContinuing with remaining files...")

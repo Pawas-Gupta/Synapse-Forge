@@ -5,7 +5,7 @@ Multi-agent AI system for automating B2B manufacturing RFP responses.
 ## Architecture
 
 ### Tech Stack
-- **LLM**: Google Gemini Pro
+- **LLM**: Groq (GPT-OSS-20B)
 - **Agent Framework**: LangChain
 - **Backend**: Flask REST API
 - **Frontend**: Streamlit
@@ -25,8 +25,8 @@ Multi-agent AI system for automating B2B manufacturing RFP responses.
 pip install -r requirements.txt
 
 # 2. Configure environment
-cp .env.example .env
-# Edit .env and add your GEMINI_API_KEY
+# Create .env file and add your GROQ_API_KEY
+# GROQ_API_KEY=your_groq_api_key_here
 
 # 3. Start backend
 python backend/app.py

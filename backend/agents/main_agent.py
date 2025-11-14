@@ -2,10 +2,7 @@
 import os
 import json
 from datetime import datetime
-from langchain.agents import AgentExecutor, create_react_agent
-from langchain.tools import Tool
-from langchain_google_genai import ChatGoogleGenerativeAI
-from langchain.prompts import PromptTemplate
+from langchain_openai import ChatOpenAI
 
 
 class MainAgent:
@@ -25,14 +22,15 @@ class MainAgent:
         self.llm = self._initialize_llm()
     
     def _initialize_llm(self):
-        """Initialize Gemini LLM"""
-        api_key = os.getenv('GEMINI_API_KEY')
+        """Initialize Groq LLM"""
+        api_key = os.getenv('GROQ_API_KEY')
         if not api_key:
-            raise ValueError("GEMINI_API_KEY not found in environment variables")
+            raise ValueError("GROQ_API_KEY not found in environment variables")
         
-        return ChatGoogleGenerativeAI(
-            model="gemini-pro",
-            google_api_key=api_key,
+        return ChatOpenAI(
+            model="openai/gpt-oss-20b",
+            api_key=api_key,
+            base_url="https://api.groq.com/openai/v1",
             temperature=0.3
         )
     
@@ -150,15 +148,3 @@ class MainAgent:
                 'Final inspection and commissioning'
             ]
         }
-
-
-print("=" * 80)
-print("AGENT FILES COMPLETE")
-print("=" * 80)
-print("\nFiles created:")
-print("9. backend/agents/__init__.py")
-print("10. backend/agents/sales_agent.py")
-print("11. backend/agents/technical_agent.py")
-print("12. backend/agents/pricing_agent.py")
-print("13. backend/agents/main_agent.py")
-print("\nContinuing with Flask backend and Streamlit frontend...")

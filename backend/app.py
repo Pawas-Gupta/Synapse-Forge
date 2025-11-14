@@ -1,8 +1,15 @@
 """Flask REST API Backend for RFP Agent System"""
+import sys
+import os
+from pathlib import Path
+
+# Add project root to Python path
+project_root = Path(__file__).parent.parent
+sys.path.insert(0, str(project_root))
+
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 from dotenv import load_dotenv
-import os
 import json
 
 from backend.database import get_db
@@ -257,7 +264,7 @@ if __name__ == '__main__':
     debug = os.getenv('FLASK_DEBUG', 'True').lower() == 'true'
     
     print("=" * 80)
-    print("🚀 RFP Agent System - Flask Backend")
+    print("RFP Agent System - Flask Backend")
     print("=" * 80)
     print(f"Server running on: http://{host}:{port}")
     print(f"Debug mode: {debug}")
