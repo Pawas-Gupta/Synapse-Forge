@@ -2,6 +2,9 @@
 
 Multi-agent AI system for automating B2B manufacturing RFP responses.
 
+# Youtube: [Link](https://youtu.be/E4rkX2IoDtE)
+
+
 ## Architecture
 
 ### Tech Stack
