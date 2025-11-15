@@ -78,8 +78,13 @@ st.set_page_config(
 # ============================================================================
 
 with st.sidebar:
-    st.image("https://via.placeholder.com/200x80/4A90E2/FFFFFF?text=RFP+Agent", use_column_width=True)
-    
+    st.markdown("""
+    <div style='text-align: center; padding: 15px; background: linear-gradient(135deg, #eb3349 0%, #f45c43 100%); border-radius: 10px; margin-bottom: 20px;'>
+        <h2 style='color: white; margin: 0;'>🤖 RFP Agent</h2>
+        <p style='color: #e8f4f8; margin: 5px 0 0 0; font-size: 0.9em;'>AI-Powered System</p>
+    </div>
+""", unsafe_allow_html=True)
+
     st.header("🔧 System Configuration")
     
     st.markdown("### Tech Stack")
