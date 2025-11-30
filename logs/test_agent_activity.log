@@ -1,0 +1,6 @@
+{"timestamp": "2025-11-30T11:58:58.129431Z", "level": "INFO", "name": "root", "message": "Logging system initialized", "log_level": "INFO", "log_file": "logs/test_agent_activity.log", "max_bytes": 10485760, "backup_count": 5}
+{"timestamp": "2025-11-30T11:58:58.129765Z", "level": "INFO", "name": "test_module", "message": "Test log message", "test_field": "test_value"}
+{"timestamp": "2025-11-30T11:58:58.129941Z", "level": "INFO", "name": "test_module", "message": "Agent execution completed: test_agent", "agent_name": "test_agent", "input_length": 100, "output_status": "success", "execution_time": 1.5}
+{"timestamp": "2025-11-30T12:00:36.703156Z", "level": "INFO", "name": "root", "message": "Logging system initialized", "log_level": "INFO", "log_file": "logs/test_agent_activity.log", "max_bytes": 10485760, "backup_count": 5}
+{"timestamp": "2025-11-30T12:00:36.703545Z", "level": "INFO", "name": "test_module", "message": "Test log message", "test_field": "test_value"}
+{"timestamp": "2025-11-30T12:00:36.703732Z", "level": "INFO", "name": "test_module", "message": "Agent execution completed: test_agent", "agent_name": "test_agent", "input_length": 100, "output_status": "success", "execution_time": 1.5}

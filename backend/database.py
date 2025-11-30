@@ -59,6 +59,21 @@ class Database:
             )
         ''')
         
+        # Conversation History Table (for LangChain SQLChatMessageHistory)
+        cursor.execute('''
+            CREATE TABLE IF NOT EXISTS message_store (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                session_id TEXT NOT NULL,
+                message TEXT NOT NULL,
+                created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+            )
+        ''')
+        
+        cursor.execute('''
+            CREATE INDEX IF NOT EXISTS idx_message_session 
+            ON message_store(session_id)
+        ''')
+        
         self.conn.commit()
     
     def _insert_mock_data(self):
@@ -184,3 +199,111 @@ def get_db():
         db_instance = Database()
     return db_instance
 # """
+
+
+
+# SQLAlchemy Connection Pooling
+from sqlalchemy import create_engine, pool
+from sqlalchemy.orm import sessionmaker
+from backend.utils.logging_config import get_logger
+
+logger = get_logger(__name__)
+
+
+class DatabasePool:
+    """
+    Database connection pool using SQLAlchemy
+    
+    Provides connection pooling with health checks and metrics.
+    """
+    
+    def __init__(self, db_url: str = 'sqlite:///data/rfp_system.db'):
+        """
+        Initialize database pool
+        
+        Args:
+            db_url: SQLAlchemy database URL
+        """
+        self.db_url = db_url
+        
+        # Create engine with connection pooling
+        self.engine = create_engine(
+            db_url,
+            poolclass=pool.QueuePool,
+            pool_size=10,
+            max_overflow=20,
+            pool_pre_ping=True,  # Health check before using connection
+            pool_recycle=3600,   # Recycle connections after 1 hour
+            echo=False
+        )
+        
+        # Create session factory
+        self.SessionLocal = sessionmaker(
+            autocommit=False,
+            autoflush=False,
+            bind=self.engine
+        )
+        
+        logger.info(f'Database pool initialized: {db_url} (size=10, max_overflow=20)')
+    
+    def get_session(self):
+        """
+        Get a database session from the pool
+        
+        Returns:
+            SQLAlchemy session
+        """
+        return self.SessionLocal()
+    
+    def get_connection(self):
+        """
+        Get a raw connection from the pool
+        
+        Returns:
+            Database connection
+        """
+        return self.engine.connect()
+    
+    def get_pool_status(self) -> dict:
+        """
+        Get connection pool status
+        
+        Returns:
+            Dictionary with pool metrics
+        """
+        pool_obj = self.engine.pool
+        
+        return {
+            'size': pool_obj.size(),
+            'checked_in': pool_obj.checkedin(),
+            'checked_out': pool_obj.checkedout(),
+            'overflow': pool_obj.overflow(),
+            'total_connections': pool_obj.size() + pool_obj.overflow()
+        }
+    
+    def close(self):
+        """Close all connections in the pool"""
+        self.engine.dispose()
+        logger.info('Database pool closed')
+
+
+# Global database pool instance
+_db_pool = None
+
+
+def get_db_pool(db_url: str = None) -> DatabasePool:
+    """
+    Get or create global database pool
+    
+    Args:
+        db_url: SQLAlchemy database URL
+    
+    Returns:
+        DatabasePool instance
+    """
+    global _db_pool
+    if _db_pool is None:
+        import os
+        db_url = db_url or os.getenv('DATABASE_URL', 'sqlite:///data/rfp_system.db')
+        _db_pool = DatabasePool(db_url)
+    return _db_pool

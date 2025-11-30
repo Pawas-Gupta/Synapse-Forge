@@ -1,0 +1,196 @@
+{"timestamp": "2025-11-30T12:09:38.216310Z", "level": "INFO", "name": "root", "message": "Logging system initialized", "log_level": "INFO", "log_file": "logs/agent_activity.log", "max_bytes": 10485760, "backup_count": 5}
+{"timestamp": "2025-11-30T12:09:38.221794Z", "level": "INFO", "name": "backend.tools.sku_tools", "message": "Loading sentence transformer model: all-MiniLM-L6-v2"}
+{"timestamp": "2025-11-30T12:09:38.223205Z", "level": "INFO", "name": "sentence_transformers.SentenceTransformer", "message": "Use pytorch device_name: cpu"}
+{"timestamp": "2025-11-30T12:09:38.223426Z", "level": "INFO", "name": "sentence_transformers.SentenceTransformer", "message": "Load pretrained SentenceTransformer: all-MiniLM-L6-v2"}
+{"timestamp": "2025-11-30T12:09:41.622291Z", "level": "WARNING", "name": "huggingface_hub.file_download", "message": "Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`"}
+{"timestamp": "2025-11-30T12:09:53.308227Z", "level": "INFO", "name": "backend.tools.sku_tools", "message": "FAISS index not found, building new index"}
+{"timestamp": "2025-11-30T12:09:53.308503Z", "level": "INFO", "name": "backend.tools.sku_tools", "message": "Building FAISS index from SKU catalog"}
+{"timestamp": "2025-11-30T12:09:53.489100Z", "level": "INFO", "name": "backend.tools.sku_tools", "message": "Built FAISS index with 8 SKUs, dimension=384"}
+{"timestamp": "2025-11-30T12:09:53.493629Z", "level": "INFO", "name": "backend.tools.sku_tools", "message": "Saved FAISS index to data/faiss_index.bin"}
+{"timestamp": "2025-11-30T12:09:53.512208Z", "level": "INFO", "name": "backend.tools.sku_tools", "message": "Found 2 matches above threshold 0.6"}
+{"timestamp": "2025-11-30T12:09:53.524360Z", "level": "INFO", "name": "backend.tools.sku_tools", "message": "Found 8 matches above threshold 0.0"}
+{"timestamp": "2025-11-30T12:09:53.532387Z", "level": "INFO", "name": "backend.tools.sku_tools", "message": "Found 2 matches above threshold 0.6"}
+{"timestamp": "2025-11-30T12:09:53.532881Z", "level": "INFO", "name": "backend.tools.sku_tools", "message": "Loading sentence transformer model: all-MiniLM-L6-v2"}
+{"timestamp": "2025-11-30T12:09:53.534246Z", "level": "INFO", "name": "sentence_transformers.SentenceTransformer", "message": "Use pytorch device_name: cpu"}
+{"timestamp": "2025-11-30T12:09:53.534443Z", "level": "INFO", "name": "sentence_transformers.SentenceTransformer", "message": "Load pretrained SentenceTransformer: all-MiniLM-L6-v2"}
+{"timestamp": "2025-11-30T12:09:57.593963Z", "level": "INFO", "name": "backend.tools.sku_tools", "message": "Loaded FAISS index from data/faiss_index.bin with 8 SKUs"}
+{"timestamp": "2025-11-30T12:09:57.611650Z", "level": "INFO", "name": "backend.tools.sku_tools", "message": "Found 2 matches above threshold 0.6"}
+{"timestamp": "2025-11-30T12:09:57.612612Z", "level": "INFO", "name": "backend.tools.sku_tools", "message": "Loading sentence transformer model: all-MiniLM-L6-v2"}
+{"timestamp": "2025-11-30T12:09:57.613970Z", "level": "INFO", "name": "sentence_transformers.SentenceTransformer", "message": "Use pytorch device_name: cpu"}
+{"timestamp": "2025-11-30T12:09:57.614238Z", "level": "INFO", "name": "sentence_transformers.SentenceTransformer", "message": "Load pretrained SentenceTransformer: all-MiniLM-L6-v2"}
+{"timestamp": "2025-11-30T12:10:01.623696Z", "level": "INFO", "name": "backend.tools.sku_tools", "message": "Loaded FAISS index from data/faiss_index.bin with 8 SKUs"}
+{"timestamp": "2025-11-30T12:10:01.624985Z", "level": "INFO", "name": "backend.tools.sku_tools", "message": "Loading sentence transformer model: all-MiniLM-L6-v2"}
+{"timestamp": "2025-11-30T12:10:01.626041Z", "level": "INFO", "name": "sentence_transformers.SentenceTransformer", "message": "Use pytorch device_name: cpu"}
+{"timestamp": "2025-11-30T12:10:01.626294Z", "level": "INFO", "name": "sentence_transformers.SentenceTransformer", "message": "Load pretrained SentenceTransformer: all-MiniLM-L6-v2"}
+{"timestamp": "2025-11-30T12:10:06.439223Z", "level": "INFO", "name": "backend.tools.sku_tools", "message": "Loaded FAISS index from data/faiss_index.bin with 8 SKUs"}
+{"timestamp": "2025-11-30T12:10:06.473276Z", "level": "INFO", "name": "backend.tools.sku_tools", "message": "Found 2 matches above threshold 0.6"}
+{"timestamp": "2025-11-30T12:16:33.402816Z", "level": "INFO", "name": "root", "message": "Logging system initialized", "log_level": "INFO", "log_file": "logs/agent_activity.log", "max_bytes": 10485760, "backup_count": 5}
+{"timestamp": "2025-11-30T12:16:33.403851Z", "level": "INFO", "name": "backend.tools.rfp_tools", "message": "Loading spaCy model: en_core_web_sm"}
+{"timestamp": "2025-11-30T12:16:34.121823Z", "level": "INFO", "name": "backend.tools.rfp_tools", "message": "Extracting quantities from text (447 chars) for 4 SKUs"}
+{"timestamp": "2025-11-30T12:16:34.133448Z", "level": "INFO", "name": "backend.tools.rfp_tools", "message": "Found 17 quantity mentions"}
+{"timestamp": "2025-11-30T12:16:34.134388Z", "level": "INFO", "name": "backend.tools.rfp_tools", "message": "Mapped quantities to 4 SKUs"}
+{"timestamp": "2025-11-30T12:16:34.135578Z", "level": "INFO", "name": "backend.tools.rfp_tools", "message": "Extracting quantities from text (447 chars) for 1 SKUs"}
+{"timestamp": "2025-11-30T12:16:34.146066Z", "level": "INFO", "name": "backend.tools.rfp_tools", "message": "Found 17 quantity mentions"}
+{"timestamp": "2025-11-30T12:16:34.146542Z", "level": "INFO", "name": "backend.tools.rfp_tools", "message": "Mapped quantities to 0 SKUs"}
+{"timestamp": "2025-11-30T12:16:34.146906Z", "level": "INFO", "name": "backend.tools.rfp_tools", "message": "Loading spaCy model: en_core_web_sm"}
+{"timestamp": "2025-11-30T12:16:34.382702Z", "level": "INFO", "name": "backend.tools.rfp_tools", "message": "Extracting quantities from text (447 chars) for 4 SKUs"}
+{"timestamp": "2025-11-30T12:16:34.395936Z", "level": "INFO", "name": "backend.tools.rfp_tools", "message": "Found 17 quantity mentions"}
+{"timestamp": "2025-11-30T12:16:34.396967Z", "level": "INFO", "name": "backend.tools.rfp_tools", "message": "Mapped quantities to 4 SKUs"}
+{"timestamp": "2025-11-30T12:19:57.973671Z", "level": "INFO", "name": "root", "message": "Logging system initialized", "log_level": "INFO", "log_file": "logs/agent_activity.log", "max_bytes": 10485760, "backup_count": 5}
+{"timestamp": "2025-11-30T12:19:57.974718Z", "level": "INFO", "name": "backend.tools.rfp_tools", "message": "Loading spaCy model: en_core_web_sm"}
+{"timestamp": "2025-11-30T12:19:58.276645Z", "level": "INFO", "name": "backend.tools.rfp_tools", "message": "Extracting quantities from text (447 chars) for 4 SKUs"}
+{"timestamp": "2025-11-30T12:19:58.287210Z", "level": "INFO", "name": "backend.tools.rfp_tools", "message": "Found 17 quantity mentions"}
+{"timestamp": "2025-11-30T12:19:58.288165Z", "level": "INFO", "name": "backend.tools.rfp_tools", "message": "Mapped quantities to 4 SKUs"}
+{"timestamp": "2025-11-30T12:19:58.290055Z", "level": "INFO", "name": "backend.tools.rfp_tools", "message": "Extracting quantities from text (447 chars) for 1 SKUs"}
+{"timestamp": "2025-11-30T12:19:58.299686Z", "level": "INFO", "name": "backend.tools.rfp_tools", "message": "Found 17 quantity mentions"}
+{"timestamp": "2025-11-30T12:19:58.300245Z", "level": "INFO", "name": "backend.tools.rfp_tools", "message": "Mapped quantities to 0 SKUs"}
+{"timestamp": "2025-11-30T12:19:58.300738Z", "level": "INFO", "name": "backend.tools.rfp_tools", "message": "Loading spaCy model: en_core_web_sm"}
+{"timestamp": "2025-11-30T12:19:58.545420Z", "level": "INFO", "name": "backend.tools.rfp_tools", "message": "Extracting quantities from text (447 chars) for 4 SKUs"}
+{"timestamp": "2025-11-30T12:19:58.557963Z", "level": "INFO", "name": "backend.tools.rfp_tools", "message": "Found 17 quantity mentions"}
+{"timestamp": "2025-11-30T12:19:58.559036Z", "level": "INFO", "name": "backend.tools.rfp_tools", "message": "Mapped quantities to 4 SKUs"}
+{"timestamp": "2025-11-30T12:20:34.155367Z", "level": "INFO", "name": "root", "message": "Logging system initialized", "log_level": "INFO", "log_file": "logs/agent_activity.log", "max_bytes": 10485760, "backup_count": 5}
+{"timestamp": "2025-11-30T12:20:34.155861Z", "level": "INFO", "name": "backend.tools.rfp_tools", "message": "Loading spaCy model: en_core_web_sm"}
+{"timestamp": "2025-11-30T12:20:34.482376Z", "level": "INFO", "name": "backend.tools.rfp_tools", "message": "Extracting quantities from text (447 chars) for 4 SKUs"}
+{"timestamp": "2025-11-30T12:20:34.493246Z", "level": "INFO", "name": "backend.tools.rfp_tools", "message": "Found 17 quantity mentions"}
+{"timestamp": "2025-11-30T12:20:34.494928Z", "level": "INFO", "name": "backend.tools.rfp_tools", "message": "Mapped quantities to 4 SKUs"}
+{"timestamp": "2025-11-30T12:20:34.496863Z", "level": "INFO", "name": "backend.tools.rfp_tools", "message": "Extracting quantities from text (447 chars) for 1 SKUs"}
+{"timestamp": "2025-11-30T12:20:34.506193Z", "level": "INFO", "name": "backend.tools.rfp_tools", "message": "Found 17 quantity mentions"}
+{"timestamp": "2025-11-30T12:20:34.506657Z", "level": "INFO", "name": "backend.tools.rfp_tools", "message": "Mapped quantities to 0 SKUs"}
+{"timestamp": "2025-11-30T12:20:34.507415Z", "level": "INFO", "name": "backend.tools.rfp_tools", "message": "Loading spaCy model: en_core_web_sm"}
+{"timestamp": "2025-11-30T12:20:34.792596Z", "level": "INFO", "name": "backend.tools.rfp_tools", "message": "Extracting quantities from text (447 chars) for 4 SKUs"}
+{"timestamp": "2025-11-30T12:20:34.805410Z", "level": "INFO", "name": "backend.tools.rfp_tools", "message": "Found 17 quantity mentions"}
+{"timestamp": "2025-11-30T12:20:34.806524Z", "level": "INFO", "name": "backend.tools.rfp_tools", "message": "Mapped quantities to 4 SKUs"}
+{"timestamp": "2025-11-30T12:28:34.193049Z", "level": "INFO", "name": "root", "message": "Logging system initialized", "log_level": "INFO", "log_file": "logs/agent_activity.log", "max_bytes": 10485760, "backup_count": 5}
+{"timestamp": "2025-11-30T12:28:35.011351Z", "level": "INFO", "name": "backend.agents.technical_agent", "message": "Technical Agent initialized with semantic_search=True"}
+{"timestamp": "2025-11-30T12:28:35.011624Z", "level": "INFO", "name": "backend.agents.technical_agent", "message": "Using semantic search for SKU matching"}
+{"timestamp": "2025-11-30T12:28:35.011825Z", "level": "INFO", "name": "backend.tools.sku_tools", "message": "Loading sentence transformer model: all-MiniLM-L6-v2"}
+{"timestamp": "2025-11-30T12:28:35.013073Z", "level": "INFO", "name": "sentence_transformers.SentenceTransformer", "message": "Use pytorch device_name: cpu"}
+{"timestamp": "2025-11-30T12:28:35.013269Z", "level": "INFO", "name": "sentence_transformers.SentenceTransformer", "message": "Load pretrained SentenceTransformer: all-MiniLM-L6-v2"}
+{"timestamp": "2025-11-30T12:28:40.060322Z", "level": "INFO", "name": "backend.tools.sku_tools", "message": "Loaded FAISS index from data/faiss_index.bin with 8 SKUs"}
+{"timestamp": "2025-11-30T12:28:40.237166Z", "level": "INFO", "name": "backend.tools.sku_tools", "message": "Found 2 matches above threshold 0.6"}
+{"timestamp": "2025-11-30T12:28:43.583227Z", "level": "INFO", "name": "httpx", "message": "HTTP Request: POST https://api.groq.com/openai/v1/chat/completions \"HTTP/1.1 200 OK\""}
+{"timestamp": "2025-11-30T12:28:43.591754Z", "level": "INFO", "name": "backend.agents.technical_agent", "message": "Agent execution completed: technical", "agent_name": "technical", "input_length": 215, "output_status": "success", "execution_time": 8.580108880996704, "matches_found": 2, "avg_match_score": 64.85, "search_method": "semantic"}
+{"timestamp": "2025-11-30T12:28:43.593412Z", "level": "INFO", "name": "root", "message": "Logging system initialized", "log_level": "INFO", "log_file": "logs/agent_activity.log", "max_bytes": 10485760, "backup_count": 5}
+{"timestamp": "2025-11-30T12:28:43.594274Z", "level": "INFO", "name": "backend.agents.pricing_agent", "message": "Pricing Agent initialized with quantity_extraction=True"}
+{"timestamp": "2025-11-30T12:28:43.594539Z", "level": "INFO", "name": "backend.agents.pricing_agent", "message": "Extracting quantities from RFP text"}
+{"timestamp": "2025-11-30T12:28:43.594687Z", "level": "INFO", "name": "backend.tools.rfp_tools", "message": "Loading spaCy model: en_core_web_sm"}
+{"timestamp": "2025-11-30T12:28:43.906390Z", "level": "INFO", "name": "backend.tools.rfp_tools", "message": "Extracting quantities from text (105 chars) for 2 SKUs"}
+{"timestamp": "2025-11-30T12:28:43.926549Z", "level": "INFO", "name": "backend.tools.rfp_tools", "message": "Found 4 quantity mentions"}
+{"timestamp": "2025-11-30T12:28:43.926945Z", "level": "INFO", "name": "backend.tools.rfp_tools", "message": "Mapped quantities to 2 SKUs"}
+{"timestamp": "2025-11-30T12:28:43.928302Z", "level": "INFO", "name": "backend.agents.pricing_agent", "message": "Extracted quantities for 2 SKUs"}
+{"timestamp": "2025-11-30T12:28:46.366752Z", "level": "INFO", "name": "httpx", "message": "HTTP Request: POST https://api.groq.com/openai/v1/chat/completions \"HTTP/1.1 200 OK\""}
+{"timestamp": "2025-11-30T12:28:46.368629Z", "level": "INFO", "name": "backend.agents.pricing_agent", "message": "Agent execution completed: pricing", "agent_name": "pricing", "input_length": 222, "output_status": "success", "execution_time": 2.7740318775177, "total_cost": 5125.0, "final_price": 6406.25, "quantity_extraction_used": true}
+{"timestamp": "2025-11-30T12:28:46.370647Z", "level": "INFO", "name": "root", "message": "Logging system initialized", "log_level": "INFO", "log_file": "logs/agent_activity.log", "max_bytes": 10485760, "backup_count": 5}
+{"timestamp": "2025-11-30T12:28:46.371176Z", "level": "INFO", "name": "backend.agents.technical_agent", "message": "Technical Agent initialized with semantic_search=True"}
+{"timestamp": "2025-11-30T12:28:46.371304Z", "level": "INFO", "name": "backend.agents.technical_agent", "message": "Using semantic search for SKU matching"}
+{"timestamp": "2025-11-30T12:28:46.371399Z", "level": "INFO", "name": "backend.tools.sku_tools", "message": "Loading sentence transformer model: all-MiniLM-L6-v2"}
+{"timestamp": "2025-11-30T12:28:46.372329Z", "level": "INFO", "name": "sentence_transformers.SentenceTransformer", "message": "Use pytorch device_name: cpu"}
+{"timestamp": "2025-11-30T12:28:46.372663Z", "level": "INFO", "name": "sentence_transformers.SentenceTransformer", "message": "Load pretrained SentenceTransformer: all-MiniLM-L6-v2"}
+{"timestamp": "2025-11-30T12:28:50.601930Z", "level": "INFO", "name": "backend.tools.sku_tools", "message": "Loaded FAISS index from data/faiss_index.bin with 8 SKUs"}
+{"timestamp": "2025-11-30T12:28:50.637194Z", "level": "INFO", "name": "backend.tools.sku_tools", "message": "Found 0 matches above threshold 0.6"}
+{"timestamp": "2025-11-30T12:28:53.925824Z", "level": "INFO", "name": "httpx", "message": "HTTP Request: POST https://api.groq.com/openai/v1/chat/completions \"HTTP/1.1 200 OK\""}
+{"timestamp": "2025-11-30T12:28:53.928604Z", "level": "INFO", "name": "backend.agents.technical_agent", "message": "Agent execution completed: technical", "agent_name": "technical", "input_length": 325, "output_status": "success", "execution_time": 7.5572450160980225, "matches_found": 0, "avg_match_score": 0, "search_method": "semantic"}
+{"timestamp": "2025-11-30T12:28:53.929587Z", "level": "INFO", "name": "backend.agents.pricing_agent", "message": "Pricing Agent initialized with quantity_extraction=True"}
+{"timestamp": "2025-11-30T12:28:53.929814Z", "level": "INFO", "name": "backend.agents.pricing_agent", "message": "Extracting quantities from RFP text"}
+{"timestamp": "2025-11-30T12:28:53.930048Z", "level": "INFO", "name": "backend.tools.rfp_tools", "message": "Loading spaCy model: en_core_web_sm"}
+{"timestamp": "2025-11-30T12:28:54.163177Z", "level": "INFO", "name": "backend.tools.rfp_tools", "message": "Extracting quantities from text (325 chars) for 0 SKUs"}
+{"timestamp": "2025-11-30T12:28:54.175330Z", "level": "INFO", "name": "backend.tools.rfp_tools", "message": "Found 11 quantity mentions"}
+{"timestamp": "2025-11-30T12:28:54.175604Z", "level": "INFO", "name": "backend.tools.rfp_tools", "message": "Mapped quantities to 0 SKUs"}
+{"timestamp": "2025-11-30T12:28:54.177101Z", "level": "INFO", "name": "backend.agents.pricing_agent", "message": "Extracted quantities for 0 SKUs"}
+{"timestamp": "2025-11-30T12:28:55.929547Z", "level": "INFO", "name": "httpx", "message": "HTTP Request: POST https://api.groq.com/openai/v1/chat/completions \"HTTP/1.1 200 OK\""}
+{"timestamp": "2025-11-30T12:28:55.930848Z", "level": "INFO", "name": "backend.agents.pricing_agent", "message": "Agent execution completed: pricing", "agent_name": "pricing", "input_length": 2, "output_status": "success", "execution_time": 2.0009405612945557, "total_cost": 0, "final_price": 0, "quantity_extraction_used": true}
+{"timestamp": "2025-11-30T12:42:58.815143Z", "level": "INFO", "name": "root", "message": "Logging system initialized", "log_level": "INFO", "log_file": "logs/agent_activity.log", "max_bytes": 10485760, "backup_count": 5}
+{"timestamp": "2025-11-30T12:42:58.832964Z", "level": "INFO", "name": "backend.tools.sku_tools", "message": "PricingStrategy initialized: base=0.25, min=0.15, max=0.4"}
+{"timestamp": "2025-11-30T12:42:58.833415Z", "level": "INFO", "name": "backend.tools.sku_tools", "message": "Calculated margin: 15.00% for cost=$10000.00", "base_margin": 0.25, "complexity": "simple", "complexity_adjustment": -0.05, "competition": "high", "competition_adjustment": -0.08, "customer_type": "new", "customer_adjustment": 0.0, "volume_discount_applied": false, "final_margin": 0.15, "bounded": true}
+{"timestamp": "2025-11-30T12:42:58.835032Z", "level": "INFO", "name": "backend.tools.sku_tools", "message": "Calculated margin: 17.00% for cost=$60000.00", "base_margin": 0.25, "complexity": "medium", "complexity_adjustment": 0.0, "competition": "medium", "competition_adjustment": 0.0, "customer_type": "returning", "customer_adjustment": -0.03, "volume_discount_applied": true, "final_margin": 0.16999999999999998, "bounded": false}
+{"timestamp": "2025-11-30T12:42:58.835924Z", "level": "INFO", "name": "backend.tools.sku_tools", "message": "Calculated margin: 40.00% for cost=$150000.00", "base_margin": 0.25, "complexity": "complex", "complexity_adjustment": 0.1, "competition": "low", "competition_adjustment": 0.12, "customer_type": "enterprise", "customer_adjustment": 0.08, "volume_discount_applied": true, "final_margin": 0.4, "bounded": true}
+{"timestamp": "2025-11-30T12:43:00.935461Z", "level": "INFO", "name": "backend.agents.technical_agent", "message": "Technical Agent initialized with semantic_search=True"}
+{"timestamp": "2025-11-30T12:43:00.937668Z", "level": "INFO", "name": "backend.agents.pricing_agent", "message": "Pricing Agent initialized with quantity_extraction=True"}
+{"timestamp": "2025-11-30T12:43:00.938958Z", "level": "INFO", "name": "backend.agents.main_agent", "message": "Main Agent initialized with validation=True"}
+{"timestamp": "2025-11-30T12:43:00.940089Z", "level": "INFO", "name": "backend.tools.rfp_tools", "message": "Parsing RFP text (218 chars)"}
+{"timestamp": "2025-11-30T12:43:00.940393Z", "level": "INFO", "name": "backend.tools.rfp_tools", "message": "Using regex-based parsing"}
+{"timestamp": "2025-11-30T12:43:00.941763Z", "level": "INFO", "name": "backend.tools.rfp_tools", "message": "Parsed RFP: title=\"\", budget=None-None"}
+{"timestamp": "2025-11-30T12:43:02.590614Z", "level": "INFO", "name": "httpx", "message": "HTTP Request: POST https://api.groq.com/openai/v1/chat/completions \"HTTP/1.1 200 OK\""}
+{"timestamp": "2025-11-30T12:43:02.600707Z", "level": "INFO", "name": "backend.agents.main_agent", "message": "Sales agent output validated successfully"}
+{"timestamp": "2025-11-30T12:43:02.601471Z", "level": "INFO", "name": "backend.agents.technical_agent", "message": "Using semantic search for SKU matching"}
+{"timestamp": "2025-11-30T12:43:02.603817Z", "level": "INFO", "name": "backend.tools.sku_tools", "message": "Loading sentence transformer model: all-MiniLM-L6-v2"}
+{"timestamp": "2025-11-30T12:43:02.608639Z", "level": "INFO", "name": "sentence_transformers.SentenceTransformer", "message": "Use pytorch device_name: cpu"}
+{"timestamp": "2025-11-30T12:43:02.609015Z", "level": "INFO", "name": "sentence_transformers.SentenceTransformer", "message": "Load pretrained SentenceTransformer: all-MiniLM-L6-v2"}
+{"timestamp": "2025-11-30T12:43:08.403518Z", "level": "INFO", "name": "backend.tools.sku_tools", "message": "Loaded FAISS index from data/faiss_index.bin with 8 SKUs"}
+{"timestamp": "2025-11-30T12:43:08.674711Z", "level": "INFO", "name": "backend.tools.sku_tools", "message": "Found 0 matches above threshold 0.6"}
+{"timestamp": "2025-11-30T12:43:11.169232Z", "level": "INFO", "name": "httpx", "message": "HTTP Request: POST https://api.groq.com/openai/v1/chat/completions \"HTTP/1.1 200 OK\""}
+{"timestamp": "2025-11-30T12:43:11.171551Z", "level": "INFO", "name": "backend.agents.technical_agent", "message": "Agent execution completed: technical", "agent_name": "technical", "input_length": 3628, "output_status": "success", "execution_time": 8.570020914077759, "matches_found": 0, "avg_match_score": 0, "search_method": "semantic"}
+{"timestamp": "2025-11-30T12:43:11.172119Z", "level": "ERROR", "name": "backend.agents.main_agent", "message": "Technical agent validation failed: Validation failed for technical agent"}
+{"timestamp": "2025-11-30T12:59:51.373454Z", "level": "INFO", "name": "root", "message": "Logging system initialized", "log_level": "INFO", "log_file": "logs/agent_activity.log", "max_bytes": 10485760, "backup_count": 5}
+{"timestamp": "2025-11-30T12:59:51.378591Z", "level": "INFO", "name": "backend.tools.sku_tools", "message": "PricingStrategy initialized: base=0.25, min=0.15, max=0.4"}
+{"timestamp": "2025-11-30T12:59:51.378737Z", "level": "INFO", "name": "backend.tools.sku_tools", "message": "Calculated margin: 15.00% for cost=$10000.00", "base_margin": 0.25, "complexity": "simple", "complexity_adjustment": -0.05, "competition": "high", "competition_adjustment": -0.08, "customer_type": "new", "customer_adjustment": 0.0, "volume_discount_applied": false, "final_margin": 0.15, "bounded": true}
+{"timestamp": "2025-11-30T13:02:24.626839Z", "level": "INFO", "name": "root", "message": "Logging system initialized", "log_level": "INFO", "log_file": "logs/agent_activity.log", "max_bytes": 10485760, "backup_count": 5}
+{"timestamp": "2025-11-30T13:02:24.627905Z", "level": "INFO", "name": "backend.tools.sku_tools", "message": "PricingStrategy initialized: base=0.25, min=0.15, max=0.4"}
+{"timestamp": "2025-11-30T13:02:24.628079Z", "level": "INFO", "name": "backend.tools.sku_tools", "message": "Calculated margin: 15.00% for cost=$10000.00", "base_margin": 0.25, "complexity": "simple", "complexity_adjustment": -0.05, "competition": "high", "competition_adjustment": -0.08, "customer_type": "new", "customer_adjustment": 0.0, "volume_discount_applied": false, "final_margin": 0.15, "bounded": true}
+{"timestamp": "2025-11-30T13:02:24.628406Z", "level": "INFO", "name": "backend.tools.sku_tools", "message": "Calculated margin: 17.00% for cost=$60000.00", "base_margin": 0.25, "complexity": "medium", "complexity_adjustment": 0.0, "competition": "medium", "competition_adjustment": 0.0, "customer_type": "returning", "customer_adjustment": -0.03, "volume_discount_applied": true, "final_margin": 0.16999999999999998, "bounded": false}
+{"timestamp": "2025-11-30T13:02:24.628934Z", "level": "INFO", "name": "backend.tools.sku_tools", "message": "Calculated margin: 40.00% for cost=$150000.00", "base_margin": 0.25, "complexity": "complex", "complexity_adjustment": 0.1, "competition": "low", "competition_adjustment": 0.12, "customer_type": "enterprise", "customer_adjustment": 0.08, "volume_discount_applied": true, "final_margin": 0.4, "bounded": true}
+{"timestamp": "2025-11-30T13:02:25.367054Z", "level": "INFO", "name": "backend.agents.technical_agent", "message": "Technical Agent initialized with semantic_search=True"}
+{"timestamp": "2025-11-30T13:02:25.367595Z", "level": "INFO", "name": "backend.agents.pricing_agent", "message": "Pricing Agent initialized with quantity_extraction=True"}
+{"timestamp": "2025-11-30T13:02:25.367994Z", "level": "INFO", "name": "backend.agents.main_agent", "message": "Main Agent initialized with validation=True"}
+{"timestamp": "2025-11-30T13:02:25.368257Z", "level": "INFO", "name": "backend.tools.rfp_tools", "message": "Parsing RFP text (218 chars)"}
+{"timestamp": "2025-11-30T13:02:25.368396Z", "level": "INFO", "name": "backend.tools.rfp_tools", "message": "Using regex-based parsing"}
+{"timestamp": "2025-11-30T13:02:25.369039Z", "level": "INFO", "name": "backend.tools.rfp_tools", "message": "Parsed RFP: title=\"\", budget=None-None"}
+{"timestamp": "2025-11-30T13:02:27.292749Z", "level": "INFO", "name": "httpx", "message": "HTTP Request: POST https://api.groq.com/openai/v1/chat/completions \"HTTP/1.1 200 OK\""}
+{"timestamp": "2025-11-30T13:02:27.299258Z", "level": "INFO", "name": "backend.agents.main_agent", "message": "Sales agent output validated successfully"}
+{"timestamp": "2025-11-30T13:02:27.299524Z", "level": "INFO", "name": "backend.agents.technical_agent", "message": "Using semantic search for SKU matching"}
+{"timestamp": "2025-11-30T13:02:27.299694Z", "level": "INFO", "name": "backend.tools.sku_tools", "message": "Loading sentence transformer model: all-MiniLM-L6-v2"}
+{"timestamp": "2025-11-30T13:02:27.301400Z", "level": "INFO", "name": "sentence_transformers.SentenceTransformer", "message": "Use pytorch device_name: cpu"}
+{"timestamp": "2025-11-30T13:02:27.301919Z", "level": "INFO", "name": "sentence_transformers.SentenceTransformer", "message": "Load pretrained SentenceTransformer: all-MiniLM-L6-v2"}
+{"timestamp": "2025-11-30T13:02:31.787893Z", "level": "INFO", "name": "backend.tools.sku_tools", "message": "Loaded FAISS index from data/faiss_index.bin with 8 SKUs"}
+{"timestamp": "2025-11-30T13:02:31.990184Z", "level": "INFO", "name": "backend.tools.sku_tools", "message": "Found 0 matches above threshold 0.6"}
+{"timestamp": "2025-11-30T13:02:34.700443Z", "level": "INFO", "name": "httpx", "message": "HTTP Request: POST https://api.groq.com/openai/v1/chat/completions \"HTTP/1.1 200 OK\""}
+{"timestamp": "2025-11-30T13:02:34.701686Z", "level": "INFO", "name": "backend.agents.technical_agent", "message": "Agent execution completed: technical", "agent_name": "technical", "input_length": 4427, "output_status": "success", "execution_time": 7.402121067047119, "matches_found": 0, "avg_match_score": 0, "search_method": "semantic"}
+{"timestamp": "2025-11-30T13:02:34.703330Z", "level": "INFO", "name": "backend.agents.main_agent", "message": "Technical agent output validated successfully"}
+{"timestamp": "2025-11-30T13:02:34.703491Z", "level": "INFO", "name": "backend.agents.pricing_agent", "message": "Extracting quantities from RFP text"}
+{"timestamp": "2025-11-30T13:02:34.703622Z", "level": "INFO", "name": "backend.tools.rfp_tools", "message": "Loading spaCy model: en_core_web_sm"}
+{"timestamp": "2025-11-30T13:02:35.280870Z", "level": "INFO", "name": "backend.tools.rfp_tools", "message": "Extracting quantities from text (4427 chars) for 0 SKUs"}
+{"timestamp": "2025-11-30T13:02:35.405685Z", "level": "INFO", "name": "backend.tools.rfp_tools", "message": "Found 20 quantity mentions"}
+{"timestamp": "2025-11-30T13:02:35.406144Z", "level": "INFO", "name": "backend.tools.rfp_tools", "message": "Mapped quantities to 0 SKUs"}
+{"timestamp": "2025-11-30T13:02:35.408738Z", "level": "INFO", "name": "backend.agents.pricing_agent", "message": "Extracted quantities for 0 SKUs"}
+{"timestamp": "2025-11-30T13:02:36.941987Z", "level": "INFO", "name": "httpx", "message": "HTTP Request: POST https://api.groq.com/openai/v1/chat/completions \"HTTP/1.1 200 OK\""}
+{"timestamp": "2025-11-30T13:02:36.942967Z", "level": "INFO", "name": "backend.agents.pricing_agent", "message": "Agent execution completed: pricing", "agent_name": "pricing", "input_length": 2, "output_status": "success", "execution_time": 2.239455223083496, "total_cost": 0, "final_price": 0, "quantity_extraction_used": true}
+{"timestamp": "2025-11-30T13:02:36.943298Z", "level": "INFO", "name": "backend.agents.main_agent", "message": "Pricing agent output validated successfully"}
+{"timestamp": "2025-11-30T13:02:36.944914Z", "level": "INFO", "name": "backend.tools.rfp_tools", "message": "Parsing RFP text (296 chars)"}
+{"timestamp": "2025-11-30T13:02:36.945024Z", "level": "INFO", "name": "backend.tools.rfp_tools", "message": "Using regex-based parsing"}
+{"timestamp": "2025-11-30T13:02:36.945221Z", "level": "INFO", "name": "backend.tools.rfp_tools", "message": "Parsed RFP: title=\"Office Building Renovation\", budget=50000.0-75000.0"}
+{"timestamp": "2025-11-30T13:05:22.188482Z", "level": "INFO", "name": "root", "message": "Logging system initialized", "log_level": "INFO", "log_file": "logs/agent_activity.log", "max_bytes": 10485760, "backup_count": 5}
+{"timestamp": "2025-11-30T13:05:22.189250Z", "level": "INFO", "name": "backend.tools.sku_tools", "message": "PricingStrategy initialized: base=0.25, min=0.15, max=0.4"}
+{"timestamp": "2025-11-30T13:05:22.189374Z", "level": "INFO", "name": "backend.tools.sku_tools", "message": "Calculated margin: 15.00% for cost=$10000.00", "base_margin": 0.25, "complexity": "simple", "complexity_adjustment": -0.05, "competition": "high", "competition_adjustment": -0.08, "customer_type": "new", "customer_adjustment": 0.0, "volume_discount_applied": false, "final_margin": 0.15, "bounded": true}
+{"timestamp": "2025-11-30T13:05:22.189479Z", "level": "INFO", "name": "backend.tools.sku_tools", "message": "Calculated margin: 17.00% for cost=$60000.00", "base_margin": 0.25, "complexity": "medium", "complexity_adjustment": 0.0, "competition": "medium", "competition_adjustment": 0.0, "customer_type": "returning", "customer_adjustment": -0.03, "volume_discount_applied": true, "final_margin": 0.16999999999999998, "bounded": false}
+{"timestamp": "2025-11-30T13:05:22.189579Z", "level": "INFO", "name": "backend.tools.sku_tools", "message": "Calculated margin: 40.00% for cost=$150000.00", "base_margin": 0.25, "complexity": "complex", "complexity_adjustment": 0.1, "competition": "low", "competition_adjustment": 0.12, "customer_type": "enterprise", "customer_adjustment": 0.08, "volume_discount_applied": true, "final_margin": 0.4, "bounded": true}
+{"timestamp": "2025-11-30T13:05:22.865559Z", "level": "INFO", "name": "backend.agents.technical_agent", "message": "Technical Agent initialized with semantic_search=True"}
+{"timestamp": "2025-11-30T13:05:22.865866Z", "level": "INFO", "name": "backend.agents.pricing_agent", "message": "Pricing Agent initialized with quantity_extraction=True"}
+{"timestamp": "2025-11-30T13:05:22.866075Z", "level": "INFO", "name": "backend.agents.main_agent", "message": "Main Agent initialized with validation=True"}
+{"timestamp": "2025-11-30T13:05:22.866154Z", "level": "INFO", "name": "backend.tools.rfp_tools", "message": "Parsing RFP text (218 chars)"}
+{"timestamp": "2025-11-30T13:05:22.866208Z", "level": "INFO", "name": "backend.tools.rfp_tools", "message": "Using regex-based parsing"}
+{"timestamp": "2025-11-30T13:05:22.866953Z", "level": "INFO", "name": "backend.tools.rfp_tools", "message": "Parsed RFP: title=\"\", budget=None-None"}
+{"timestamp": "2025-11-30T13:05:24.161166Z", "level": "INFO", "name": "httpx", "message": "HTTP Request: POST https://api.groq.com/openai/v1/chat/completions \"HTTP/1.1 200 OK\""}
+{"timestamp": "2025-11-30T13:05:24.167474Z", "level": "INFO", "name": "backend.agents.main_agent", "message": "Sales agent output validated successfully"}
+{"timestamp": "2025-11-30T13:05:24.167574Z", "level": "INFO", "name": "backend.agents.technical_agent", "message": "Using semantic search for SKU matching"}
+{"timestamp": "2025-11-30T13:05:24.167632Z", "level": "INFO", "name": "backend.tools.sku_tools", "message": "Loading sentence transformer model: all-MiniLM-L6-v2"}
+{"timestamp": "2025-11-30T13:05:24.168689Z", "level": "INFO", "name": "sentence_transformers.SentenceTransformer", "message": "Use pytorch device_name: cpu"}
+{"timestamp": "2025-11-30T13:05:24.168767Z", "level": "INFO", "name": "sentence_transformers.SentenceTransformer", "message": "Load pretrained SentenceTransformer: all-MiniLM-L6-v2"}
+{"timestamp": "2025-11-30T13:05:28.754400Z", "level": "INFO", "name": "backend.tools.sku_tools", "message": "Loaded FAISS index from data/faiss_index.bin with 8 SKUs"}
+{"timestamp": "2025-11-30T13:05:28.803114Z", "level": "INFO", "name": "backend.tools.sku_tools", "message": "Found 0 matches above threshold 0.6"}
+{"timestamp": "2025-11-30T13:05:32.043897Z", "level": "INFO", "name": "httpx", "message": "HTTP Request: POST https://api.groq.com/openai/v1/chat/completions \"HTTP/1.1 200 OK\""}
+{"timestamp": "2025-11-30T13:05:32.045217Z", "level": "INFO", "name": "backend.agents.technical_agent", "message": "Agent execution completed: technical", "agent_name": "technical", "input_length": 3574, "output_status": "success", "execution_time": 7.877576112747192, "matches_found": 0, "avg_match_score": 0, "search_method": "semantic"}
+{"timestamp": "2025-11-30T13:05:32.045366Z", "level": "INFO", "name": "backend.agents.main_agent", "message": "Technical agent output validated successfully"}
+{"timestamp": "2025-11-30T13:05:32.045434Z", "level": "INFO", "name": "backend.agents.pricing_agent", "message": "Extracting quantities from RFP text"}
+{"timestamp": "2025-11-30T13:05:32.045576Z", "level": "INFO", "name": "backend.tools.rfp_tools", "message": "Loading spaCy model: en_core_web_sm"}
+{"timestamp": "2025-11-30T13:05:32.713035Z", "level": "INFO", "name": "backend.tools.rfp_tools", "message": "Extracting quantities from text (3574 chars) for 0 SKUs"}
+{"timestamp": "2025-11-30T13:05:33.101192Z", "level": "INFO", "name": "backend.tools.rfp_tools", "message": "Found 17 quantity mentions"}
+{"timestamp": "2025-11-30T13:05:33.101511Z", "level": "INFO", "name": "backend.tools.rfp_tools", "message": "Mapped quantities to 0 SKUs"}
+{"timestamp": "2025-11-30T13:05:33.106266Z", "level": "INFO", "name": "backend.agents.pricing_agent", "message": "Extracted quantities for 0 SKUs"}
+{"timestamp": "2025-11-30T13:05:34.925005Z", "level": "INFO", "name": "httpx", "message": "HTTP Request: POST https://api.groq.com/openai/v1/chat/completions \"HTTP/1.1 200 OK\""}
+{"timestamp": "2025-11-30T13:05:34.930270Z", "level": "INFO", "name": "backend.agents.pricing_agent", "message": "Agent execution completed: pricing", "agent_name": "pricing", "input_length": 2, "output_status": "success", "execution_time": 2.884381055831909, "total_cost": 0, "final_price": 0, "quantity_extraction_used": true}
+{"timestamp": "2025-11-30T13:05:34.931183Z", "level": "INFO", "name": "backend.agents.main_agent", "message": "Pricing agent output validated successfully"}
+{"timestamp": "2025-11-30T13:05:34.931909Z", "level": "INFO", "name": "backend.tools.rfp_tools", "message": "Parsing RFP text (296 chars)"}
+{"timestamp": "2025-11-30T13:05:34.935366Z", "level": "INFO", "name": "backend.tools.rfp_tools", "message": "Using regex-based parsing"}
+{"timestamp": "2025-11-30T13:05:34.936587Z", "level": "INFO", "name": "backend.tools.rfp_tools", "message": "Parsed RFP: title=\"Office Building Renovation\", budget=50000.0-75000.0"}
+{"timestamp": "2025-11-30T13:05:34.937267Z", "level": "INFO", "name": "backend.tools.sku_tools", "message": "PricingStrategy initialized: base=0.25, min=0.15, max=0.4"}
+{"timestamp": "2025-11-30T13:05:34.940180Z", "level": "INFO", "name": "backend.tools.sku_tools", "message": "Calculated margin: 40.00% for cost=$5125.00", "base_margin": 0.25, "complexity": "complex", "complexity_adjustment": 0.1, "competition": "low", "competition_adjustment": 0.12, "customer_type": "enterprise", "customer_adjustment": 0.08, "volume_discount_applied": false, "final_margin": 0.4, "bounded": true}
